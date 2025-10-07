@@ -13,6 +13,6 @@
         "deadline": "2025-10-07T21:30:00",
         "reminder_time": "2025-10-07T21:25:00",
         "completed": false,
-        "reminded": false
+        "reminded": true
     }
 ]
