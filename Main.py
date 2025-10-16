@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 import threading
 import sys
 
-# Optional: Try to import pygame for sound playback
 try:
     import pygame
     pygame.mixer.init()
@@ -15,14 +14,12 @@ except ImportError:
     PYGAME_AVAILABLE = False
     print("Warning: pygame library not found. Sound notifications will use system beep. Install with 'pip install pygame'.")
 
-# Import winsound for Windows system sounds as fallback
 try:
     import winsound
     WINSOUND_AVAILABLE = True
 except ImportError:
     WINSOUND_AVAILABLE = False
 
-# Optional: Try to import plyer for desktop notifications
 try:
     from plyer import notification
     PLYER_AVAILABLE = True
